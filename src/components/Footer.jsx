@@ -187,7 +187,6 @@ export default function Footer() {
         ========================== */}
 
         <div className="relative z-10 mx-auto max-w-7xl">
-
           {/* =========================
               CTA
           ========================== */}
@@ -241,7 +240,6 @@ export default function Footer() {
                 "
               >
                 <span className="relative flex h-2 w-2">
-
                   <span
                     className="
                       absolute
@@ -271,7 +269,6 @@ export default function Footer() {
                       bg-success
                     "
                   />
-
                 </span>
 
                 <span
@@ -308,11 +305,8 @@ export default function Footer() {
                 "
               >
                 Ide Besar Dimulai dari{" "}
-                <span className="text-primary">
-                  Percakapan Sederhana.
-                </span>
+                <span className="text-primary">Percakapan Sederhana.</span>
               </h2>
-
             </motion.div>
 
             {/* RIGHT */}
@@ -351,9 +345,8 @@ export default function Footer() {
                   lg:text-right
                 "
               >
-                Punya ide atau tantangan digital?
-                Mari diskusikan bagaimana Xseven dapat
-                membantu mewujudkannya.
+                Punya ide atau tantangan digital? Mari diskusikan bagaimana
+                Xseven dapat membantu mewujudkannya.
               </p>
 
               {/* CTA */}
@@ -391,7 +384,6 @@ export default function Footer() {
                 "
               >
                 Mulai Project
-
                 <FiArrowUpRight
                   className="
                     text-base
@@ -404,7 +396,6 @@ export default function Footer() {
                   "
                 />
               </motion.a>
-
             </motion.div>
           </div>
 
@@ -434,7 +425,6 @@ export default function Footer() {
             ========================== */}
 
             <div>
-
               {/* LOGO */}
 
               <a
@@ -493,7 +483,6 @@ export default function Footer() {
                     Company
                   </p>
                 </div>
-
               </a>
 
               {/* DESCRIPTION */}
@@ -509,15 +498,13 @@ export default function Footer() {
                   text-muted
                 "
               >
-                Partner digital untuk membantu bisnis
-                menciptakan pengalaman melalui teknologi,
-                desain, dan strategi.
+                Partner digital untuk membantu bisnis menciptakan pengalaman
+                melalui teknologi, desain, dan strategi.
               </p>
 
               {/* SOCIAL */}
 
               <div className="mt-6 flex items-center gap-2">
-
                 {socials.map((social) => {
                   const Icon = social.icon;
 
@@ -561,9 +548,7 @@ export default function Footer() {
                     </a>
                   );
                 })}
-
               </div>
-
             </div>
 
             {/* =========================
@@ -571,16 +556,11 @@ export default function Footer() {
             ========================== */}
 
             <FooterColumn title="Navigasi">
-
               {navigation.map((item) => (
-                <FooterLink
-                  key={item.name}
-                  href={item.href}
-                >
+                <FooterLink key={item.name} href={item.href}>
                   {item.name}
                 </FooterLink>
               ))}
-
             </FooterColumn>
 
             {/* =========================
@@ -588,7 +568,6 @@ export default function Footer() {
             ========================== */}
 
             <FooterColumn title="Layanan">
-
               {services.map((service) => (
                 <span
                   key={service}
@@ -602,7 +581,6 @@ export default function Footer() {
                   {service}
                 </span>
               ))}
-
             </FooterColumn>
 
             {/* =========================
@@ -610,7 +588,6 @@ export default function Footer() {
             ========================== */}
 
             <FooterColumn title="Kontak">
-
               <a
                 href="mailto:hello@xseven.co"
                 className="
@@ -638,9 +615,7 @@ export default function Footer() {
                   "
                 />
 
-                <span>
-                  hello@xseven.co
-                </span>
+                <span>hello@xseven.co</span>
               </a>
 
               <div
@@ -665,14 +640,12 @@ export default function Footer() {
                 />
 
                 <span>
-                  Yogyakarta,
+                  Wonosobo,
                   <br />
-                  Indonesia
+                  Jawa Tengah, Indonesia
                 </span>
               </div>
-
             </FooterColumn>
-
           </div>
 
           {/* =========================
@@ -707,9 +680,7 @@ export default function Footer() {
               "
             >
               © {currentYear}{" "}
-              <span className="font-semibold text-heading">
-                Xseven Company
-              </span>
+              <span className="font-semibold text-heading">Xseven Company</span>
               . All rights reserved.
             </p>
 
@@ -773,7 +744,6 @@ export default function Footer() {
                 "
               >
                 Kembali ke atas
-
                 <span
                   className="
                     flex
@@ -801,10 +771,8 @@ export default function Footer() {
                   <FiArrowUp />
                 </span>
               </motion.button>
-
             </div>
           </div>
-
         </div>
       </div>
     </footer>
