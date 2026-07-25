@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+/* =========================
+   XSEVEN DESIGN SYSTEM
+========================= */
+
+@theme {
+  /* Brand */
+  --color-primary: #f59e0b;
+  --color-secondary: #fde047;
+  --color-accent: #fbbf24;
+  --color-success: #10b981;
+
+  /* Dynamic theme colors */
+  --color-background: var(--xseven-background);
+  --color-surface: var(--xseven-surface);
+  --color-card: var(--xseven-card);
+  --color-border: var(--xseven-border);
+
+  --color-heading: var(--xseven-heading);
+  --color-body: var(--xseven-text);
+  --color-muted: var(--xseven-muted);
+
+  /* Font */
+  --font-poppins: "Poppins", sans-serif;
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+:root {
+  --xseven-background: #fffbeb;
+  --xseven-surface: #ffffff;
+  --xseven-card: #ffffff;
+
+  --xseven-border: #d6d3d1;
+
+  --xseven-heading: #1c1917;
+  --xseven-text: #57534e;
+  --xseven-muted: #78716c;
+
+  color-scheme: light;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark {
+  --xseven-background: #1c1917;
+  --xseven-surface: #292524;
+  --xseven-card: #292524;
+
+  --xseven-border: #44403c;
+
+  --xseven-heading: #fafaf9;
+  --xseven-text: #d6d3d1;
+  --xseven-muted: #a8a29e;
+
+  color-scheme: dark;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background-color: var(--xseven-background);
+  color: var(--xseven-text);
+
+  font-family: "Poppins", sans-serif;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background-color: #f59e0b;
+  color: #1c1917;
+}
